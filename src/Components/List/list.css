@@ -1,0 +1,12 @@
+h1 {
+  font-size: 3rem;
+}
+
+.list {
+  display: grid;
+  gap: 30px;
+}
+.list .list-container {
+  display: grid;
+  gap: 20px;
+}/*# sourceMappingURL=list.css.map */

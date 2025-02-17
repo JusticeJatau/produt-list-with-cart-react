@@ -1,0 +1,44 @@
+//border-radius
+$border-radius-1: 10px;
+$border-radius-2: 20px;
+$border-radius-3: 30px;
+$border-radius-4: 40px;
+$border-radius-5: 50px;
+$border-radius-full: 50%;
+
+//gaps
+$gap-sm: 5px;
+$gap-1: 10px;
+$gap-1-5: 15px;
+$gap-2: 20px;
+$gap-2-5: 25px;
+$gap-3: 30px;
+$gap-3-5: 35px;
+$gap-4: 40px;
+$gap-4-5: 45px;
+$gap-5: 50px;
+$gap-5-5: 55px;
+
+//font weight
+$fw-sm: 400;
+$fw-md: 600;
+$fw-lg: 700;
+
+$breakpoint-up:(
+    'sm': 375px,
+    'md': 500px,
+    'lg': 750px,
+    'xlg': 1020px,
+    'xxlg': 1440px
+);
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoint-up, $size)){
+        @content;
+    }
+}
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoint-up, $size)){
+        @content;
+    }
+}

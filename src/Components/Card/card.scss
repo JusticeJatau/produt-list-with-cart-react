@@ -1,0 +1,93 @@
+@use '../../../dist/util' as u;
+
+$Red: hsl(14, 86%, 42%);
+$Green: hsl(159, 69%, 38%);
+$Rose-50: hsl(20, 50%, 98%);
+$Rose-100: hsl(13, 31%, 94%);
+$Rose-300: hsl(14, 25%, 72%);
+$Rose-400: hsl(7, 20%, 60%);
+$Rose-500: hsl(12, 20%, 44%);
+$Rose-900: hsl(14, 65%, 9%);
+
+.card{
+    display: grid;
+    gap: u.$gap-4;
+    overflow: hidden;
+    padding-bottom: u.$gap-2;
+    
+
+    .card-top{
+        position: relative;
+        display: flex;
+        
+        img{
+            width: 100%;
+            border-radius: u.$border-radius-1;
+        }
+        .add-cart{
+            position: absolute;
+            display: flex;
+            user-select: none;
+            outline: none;
+            white-space: nowrap;
+            justify-content: center;
+            gap: u.$gap-1;
+            top: 100%;
+            left: 50%;
+            width: clamp(40%, 50%, 60%);
+            //Use width: auto; to make it scale with it's content
+            //This will prevent the svg from shrinking, but have to fix
+            //The issue of the increment and decrement div shrinking.
+            transform: translateX(-50%) translateY(-50%);
+            background: $Rose-50;
+            border: 1px solid $Rose-300;
+            border-radius: u.$border-radius-5;
+            padding: u.$gap-1-5 u.$gap-2;
+            font-weight: u.$fw-md;
+
+            &.quantity{
+                background: $Red;
+                gap: 0;
+                justify-content: space-between;
+                border: none;
+
+                span{
+                    color: $Rose-100;
+                }
+                svg{
+                    border: 1px solid $Rose-50;
+                    padding: u.$gap-sm;
+                    border-radius: u.$border-radius-full;
+
+                    &:hover{
+                        background: $Rose-50;
+                        stroke: $Red;
+                    }
+                }
+            }
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+
+            &:hover:not(.quantity){
+                filter: brightness(.95);
+                border: 1px solid $Red;
+                
+                span{
+                    color: $Red;
+                }
+            }
+        }
+    }
+    .card-body{
+        display: inherit;
+        gap: u.$gap-sm;
+        .price{
+            font-weight: u.$fw-md;
+        }
+        .card-text{
+            font-size: 16px;
+        }
+    }
+}

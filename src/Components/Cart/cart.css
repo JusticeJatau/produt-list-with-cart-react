@@ -1,0 +1,57 @@
+.cart {
+  background: hsl(20, 50%, 98%);
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+}
+.cart h2 {
+  color: hsl(14, 86%, 42%);
+}
+.cart .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: hsl(13, 31%, 94%);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.cart .confirm-btn {
+  background: hsl(14, 86%, 42%);
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  color: hsl(20, 50%, 98%);
+  font-weight: 600;
+}
+.cart .confirm-btn:hover {
+  background: hsl(14, 82%, 32%);
+}
+.cart .cartItems .content {
+  display: grid;
+  gap: 20px;
+}
+.cart .cartItems .order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.cart .cartItems .order-total .total {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.cart .cartItems .no-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.cart .cartItems .no-item span {
+  color: hsl(12, 20%, 44%);
+}/*# sourceMappingURL=cart.css.map */

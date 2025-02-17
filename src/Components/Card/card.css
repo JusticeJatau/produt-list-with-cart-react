@@ -1,0 +1,71 @@
+.card {
+  display: grid;
+  gap: 40px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.card .card-top {
+  position: relative;
+  display: flex;
+}
+.card .card-top img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card .card-top .add-cart {
+  position: absolute;
+  display: flex;
+  user-select: none;
+  outline: none;
+  white-space: nowrap;
+  justify-content: center;
+  gap: 10px;
+  top: 100%;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: hsl(20, 50%, 98%);
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+.card .card-top .add-cart.quantity {
+  background: hsl(14, 86%, 42%);
+  gap: 0;
+  justify-content: space-between;
+  border: none;
+}
+.card .card-top .add-cart.quantity span {
+  color: hsl(13, 31%, 94%);
+}
+.card .card-top .add-cart.quantity svg {
+  border: 1px solid hsl(20, 50%, 98%);
+  padding: 5px;
+  border-radius: 50%;
+}
+.card .card-top .add-cart.quantity svg:hover {
+  background: hsl(20, 50%, 98%);
+  stroke: hsl(14, 86%, 42%);
+}
+.card .card-top .add-cart svg {
+  width: 20px;
+  height: 20px;
+}
+.card .card-top .add-cart:hover:not(.quantity) {
+  filter: brightness(0.95);
+  border: 1px solid hsl(14, 86%, 42%);
+}
+.card .card-top .add-cart:hover:not(.quantity) span {
+  color: hsl(14, 86%, 42%);
+}
+.card .card-body {
+  display: inherit;
+  gap: 5px;
+}
+.card .card-body .price {
+  font-weight: 600;
+}
+.card .card-body .card-text {
+  font-size: 16px;
+}/*# sourceMappingURL=card.css.map */

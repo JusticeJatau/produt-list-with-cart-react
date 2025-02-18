@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-product-list-with-cart-using-css-grid-react-scss-86dSRkyNG_)
-- Live Site URL: [Add live site URL here](https://productlistwithcart-react.netlify.app/)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/responsive-product-list-with-cart-using-css-grid-react-scss-86dSRkyNG_)
+- Live Site URL: [netlify.app](https://productlistwithcart-react.netlify.app/)
 
 ## My process
 
